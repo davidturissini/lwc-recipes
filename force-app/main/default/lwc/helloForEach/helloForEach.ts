@@ -1,7 +1,13 @@
 import { LightningElement } from 'lwc';
 
+interface Contact {
+    Id: string;
+    Name: string;
+    Title: string;
+}
+
 export default class HelloForEach extends LightningElement {
-    contacts = [
+    contacts: Contact[] = [
         {
             Id: '003171931112854375',
             Name: 'Amy Taylor',
