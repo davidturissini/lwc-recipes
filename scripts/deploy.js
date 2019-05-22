@@ -26,7 +26,6 @@ function compileTypescript(componentPath) {
 
 function deployToSFDX(files) {
     console.log('deploying');
-    // sfdx force:source:deploy --sourcepath /Users/dturissini/Development/build-apps-with-lwc/force-app/main/default/lwc/helloWebComponent/helloWebComponent.js --json --loglevel fatal
     child_process.exec(
         `sfdx force:source:deploy --sourcepath ${dest} --json --loglevel fatal`,
         err => {
